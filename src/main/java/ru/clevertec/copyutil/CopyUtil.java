@@ -21,7 +21,7 @@ public class CopyUtil {
         int oldDestSize = dest.size();
         copy(source, dest);
         int newDestSize = dest.size();
-        System.out.println(String.format("Source size: %d, dest size: %d, dest size after copy: %d", sourceSize, oldDestSize, newDestSize));
+        System.out.printf("Source size: %d, dest size: %d, dest size after copy: %d%n", sourceSize, oldDestSize, newDestSize);
    }
 
     static <T> void copy(List<? extends T> source, List<? super T> dest) {
